@@ -50,7 +50,7 @@ public int nombreMetodo(int a){//USO DE PARAMETROS
   return respuesta
 }
 ```
-## Método Constructor
+## Método Constructor y sobrebrecarga
 Un constructor es un método especial de un clase que se invoca siempre que se crea un objeto de esa clase.
 
 ***NOTA***: Cuando se crea un objeto ocurre 3 cosas:
@@ -63,9 +63,26 @@ Persona p1 = new Persona(valoresConstructor);
 //Crear constructor
 public Persona(atributos que se deseen inicilizar){
 }
+//Sobrecarga metodo constructor
+public Persona(atributos a inicilizar diferentes al primero){
+}
+//el mismo caso aplica para los otros tipo de metodos
 ``` 
 
+## Modificadores de Acceso
+```java
+public class Persona{
 
+  //#NIVEL DE PAQUETE
+  int atributo0 //modificador de acceso por defecto que NO se deja acceder por clases que se encuentran en paquetes diferentes pero SI por clases del mismo paquete.
+  
+  //#NIVEL INTERPAQUETES (paquetes del mismo proyecto)
+  public int atributo1 //modificado de acceso publico que SI se deja acceder desde clases que se encuentran en paquetes diferentes.
+  
+  //# NIVEL DE CLASE
+  private int atributo2 //modificador de acceso privado que SOLO se puede acceder por metodos de la misma clase
+}
+```
 
 # Indice Repositorio Java
 ### Carpeta POO
