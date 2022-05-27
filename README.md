@@ -70,6 +70,7 @@ public Persona(atributos a inicilizar diferentes al primero){
 ``` 
 
 ## Modificadores de Acceso
+Son palabras claves que nos permiten cambiar el nivel de visibilidad o privilegios de acceso a los componentes de un objeto (atributos y metodos).
 ```java
 public class Persona{
 
@@ -83,6 +84,11 @@ public class Persona{
   private int atributo2 //modificador de acceso privado que SOLO se puede acceder por metodos de la misma clase
 }
 ```
+# Encapsulamiento y metodos accesores(Getters and Setters)
+El **encapsulamiento** es ocultar datos (atributos) para que no cualquiera lo pueda modificar, sino que puedan ser modificados por metodos de la misma clase, para lo cual se usan los métodos **Setters para establecer y Getters para obtener atributos encapsulados**.
+
+Si los atributos están con private no se podrá acceder desde el main a esos valores directamente, por lo tanto debemos usar los metodos Setters para establecer un valor a ese atributo y Getter para obtener el valor del atributo.
+
 
 # Indice Repositorio Java
 ### Carpeta POO
