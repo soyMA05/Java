@@ -5,7 +5,8 @@
  */
 package ClaseYObjetos;
 
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -24,11 +25,8 @@ public class Operaciones {
     
     //metodo para pedir 2 numeros
     public void pedirNumeros(){
-        Scanner teclado = new Scanner(System.in);
-        System.out.print("Ingrese el primer numero: ");
-        numero1 = teclado.nextInt();
-        System.out.print("Ingrese el segundo numero: ");
-        numero2 = teclado.nextInt();
+         numero1 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un numero: "));
+         numero2 = Integer.parseInt(JOptionPane.showInputDialog("Ingrese otro numero: "));
     }
     
     //metodo para sumar 2 numeros
@@ -50,6 +48,7 @@ public class Operaciones {
     
     //metodo para mostrar resultados
     public void mostrarResultados(){
+        System.out.println("--------Clase Operaciones SIN Parametros NI Argumentos--------");
         System.out.println("Suma: "+ rsuma);
         System.out.println("Resta: "+ rresta);
         System.out.println("Multiplicacion: "+ rmultiplicacion);
