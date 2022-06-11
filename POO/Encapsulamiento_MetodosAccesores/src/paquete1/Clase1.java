@@ -14,7 +14,7 @@ public class Clase1 {
     private int edad;
     private String nombre;
     private int idProvincia;
-    //variable estatica
+    //variable constante
     private final String cedula; //#cedula nunca cambia por eso estatica y no es visible en ninguna otra clase
     
 
