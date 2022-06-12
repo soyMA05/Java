@@ -14,10 +14,12 @@ public class Main {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         // TODO code application logic here
-        Persona persona = new Persona("Jaime", "Kaviedes", 45, "1708205444", "H");
-        System.out.println("***Datos*** \n"+persona.obtenerDatos());
+        Persona persona = new Persona("Jaime", "Ayuvi", 45, "1708205444", "H");
+        persona.setApellido("Correa");
+        //persona.sexo="F";
+        System.out.println("***Datos*** \n"+persona.mostrarDatos());
     }
-    
+    */
 }

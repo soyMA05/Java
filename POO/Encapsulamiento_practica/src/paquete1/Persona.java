@@ -12,11 +12,11 @@ package paquete1;
 public class Persona {
     
     //Atributos
-    String nombre;
-    String apellido;
-    int edad;
-    String cedula;
-    String sexo;
+    private String nombre;
+    private String apellido;
+    private int edad;
+    private String cedula;
+    private String sexo;
     
     //Metodo constructor
     public Persona(String _nombre, String _apellido, int _edad, String _cedula, String _sexo){
@@ -71,9 +71,13 @@ public class Persona {
         this.sexo = sexo;
     }
    
-   public String obtenerDatos(){
-       String texto =" ";
-       texto = this.nombre + "\n"+ this.apellido +"\n" + Integer.toString(edad) + "\n" + this.cedula + "\n" +this.sexo;
-       return texto;
-   }
+    private String obtenerDatos(){
+       String textoDatos = this.nombre + " "+ this.apellido +" " + Integer.toString(edad) + " " + this.cedula + " " +this.sexo +"\n\n---------\n\n";
+       return textoDatos;
+    }
+    
+    public String mostrarDatos(){
+        return obtenerDatos();
+    }
+    
 }
