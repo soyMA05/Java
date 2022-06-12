@@ -72,7 +72,7 @@ public class Persona {
     }
    
     private String obtenerDatos(){
-       String textoDatos = this.nombre + " "+ this.apellido +" " + Integer.toString(edad) + " " + this.cedula + " " +this.sexo +"\n\n---------\n\n";
+       String textoDatos = this.nombre + " "+ this.apellido +" " + Integer.toString(edad) + " " + this.cedula + " " +this.sexo +"\n---------";
        return textoDatos;
     }
     

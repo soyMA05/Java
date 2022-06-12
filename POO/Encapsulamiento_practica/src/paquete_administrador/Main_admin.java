@@ -35,6 +35,7 @@ public class Main_admin {
         
         for(Persona registro: listaPersonas){
             System.out.println(registro.mostrarDatos());
+            
         }
         
         
